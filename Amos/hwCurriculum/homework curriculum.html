@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/goldfish test/cssreset.css">
+    <style>
+    body {
+        font-family:標楷體;
+        background-color: #dcdcdc;
+        font-weight: bold;     
+    }
+    table {
+        margin: auto;
+        border:0.5px solid black;
+        text-align: center;     
+    }
+    caption{
+        font-weight: 900;
+        font-size: 23px;
+        padding: 10px;
+    }
+    td,th{
+        vertical-align:middle;
+        border:1.5px solid black;
+        line-height:1.4;     
+    }
+    td[scope='lessonWeek']{
+        height: 32px;
+        font-weight: 900;
+        font-size: 17px;
+        text-align: center;        
+        padding: 0px 0 0px 6px;     
+    }
+    td[scope='rowNoon']{
+        font-weight: 900;
+        font-size: 10px;
+        Height:46px;       
+    }
+    td[scope='row']{
+        font-weight: 900;
+        font-size: 10px;
+        width:93px;               
+    }
+    td[scope='rowExcercise']{
+        font-weight: 900;
+        font-size: 10px;     
+    }
+    td[scope='col']{
+        font-weight: 900;
+        font-size: 17px;   
+    }
+    th{
+        font-size: 14px;
+        height: 46px;
+        width:111px;           
+    }
+    th[scope='Excercise']{
+        height:34px;
+        letter-spacing: 0.3em;
+    }
+    th[scope='bfLesson1']{
+        font-size: 17px;
+        background-image: linear-gradient(to bottom,transparent 20%,#fff 20%,#fff 80%,transparent 80%);
+        height:35px;           
+    }
+    .container{
+        position: relative;
+        top: -15%;
+        font-size: 14px;   
+    }
+    th[scope='bfLesson1BookClub']{
+        font-size: 17px;
+        line-height:1.2;
+        background-image: linear-gradient(to bottom,transparent 21%,#fff 21%,#fff 48%,transparent 48%);
+        height:35px;                   
+    }
+    td[scope='rowBFLesson1']{
+        font-weight: 900;
+        font-size: 10px;                 
+    }
+    </style>
+
+</head>
+<body>
+    <table  cellpadding="0" cellspacing="0" >
+        <caption>四年甲班 班級課表</caption>
+        <thead>
+            <tr>
+                <td scope="lessonWeek">節次\星期</td>
+                <td scope="col">星期一</td>
+                <td scope="col">星期二</td>
+                <td scope="col">星期三</td>
+                <td scope="col">星期四</td>
+                <td scope="col">星期五</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td scope="rowBFLesson1">08:00~08:20</td>
+                <th scope="bfLesson1">晨讀</th>
+                <th scope="bfLesson1" rowspan="2"> <span class="container">彈性-數學</span> </th>
+                <th scope="bfLesson1">晨讀</th>
+                <th scope="bfLesson1BookClub" rowspan="2">班級<br>讀書會</th>
+                <th scope="bfLesson1"></th>
+            </tr>
+            <tr>
+                <td scope="rowBFLesson1">08:20~08:40</td>
+                <th scope="bfLesson1">打掃</th>
+                <th scope="bfLesson1">打掃</th>
+                <th scope="bfLesson1"></th>
+                
+            </tr>
+            <tr>
+                <td scope="row">第一節<br>08:45~09:25</td>
+                <th>綜合活動</th>
+                <th>國語</th>
+                <th>數學</th>
+                <th>數學</th>
+                <th></th>
+            </tr>
+            <tr>
+                <td scope="row">第二節<br>09:30~10:10</td>
+                <th>綜合活動</th>
+                <th>國語</th>
+                <th>社會</th>
+                <th>國語</th>
+                <th>電腦巴拉巴</th>
+            </tr>
+            <tr>
+                <td scope="rowExcercise">10:10~10:30</td>
+                <th scope="Excercise" colspan="5">全校運動時間</th>
+                
+            </tr>
+            <tr>
+                <td scope="row">第三節<br>10:30~11:10</td>
+                <th>音樂</th>
+                <th>社會</th>
+                <th>彈性(導師)</th>
+                <th>健康與體育</th>
+                <th></th>
+            </tr>
+            <tr>
+                <td scope="row">第四節<br>11:20~12:00</td>
+                <th>數學</th>
+                <th>社會</th>
+                <th>國際教育</th>
+                <th>健康與體育</th>
+                <th></th>
+            </tr>
+            <tr>
+                <td scope="rowNoon" colspan="6">午餐時間<br>12:00~12:40</td>
+
+            </tr>
+            <tr>
+                <td scope="rowNoon" colspan="6">午休時間<br>12:40~13:00</td>
+   
+            </tr>
+            <tr>
+                <td scope="row">第五節<br>13:10~13:50</td>
+                <th>國語</th>
+                <th>自然</th>
+                <th></th>
+                <th>美勞</th>
+                <th></th>
+            </tr>
+            <tr>
+                <td scope="row">第六節<br>14:00~14:40</td>
+                <th>國際教育</th>
+                <th>自然</th>
+                <th></th>
+                <th>美勞</th>
+                <th></th>
+            </tr>
+            <tr>
+                <td scope="row">第七節<br>14:50~15:30</td>
+                <th>健康與體育</th>
+                <th>自然</th>
+                <th></th>
+                <th>本土語言</th>
+                <th></th>
+            </tr>
+
+
+        </tbody>
+        <tfoot>
+
+        </tfoot>
+    </table>
+</body>
+</html>

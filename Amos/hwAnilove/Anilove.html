@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../cssreset.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <title>Document</title>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;                
+        }
+        .page{
+            width:1280px;
+        }
+        .communication{            
+            display: flex;
+            justify-content: space-between;
+            height:60px;
+            background-color: #000;
+            
+        }
+        .communication .items{
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+            font-size: 20px;
+            margin: 0 50px;
+        }
+        .communication .items a{
+            text-decoration: none; 
+            padding: 5px;    
+            color: #fff; 
+            transition-duration: .3s;      
+        }
+        .communication .items a:hover{
+            color: orange;
+
+        }
+        .communication .items img{
+            width: 15px;
+            height: 15px;            
+            border-radius: 50%;
+            /* padding: 2px; */
+        }
+        .communication i{
+            color: orange;
+            font-size: 16px;
+        }
+        .icon{
+            background-color: #fff;
+            border-radius: 50%;
+            height: 15px;
+            width: 15px;
+            margin: 0 2px;
+            display: flex;
+            transition-duration: .3s;
+        }
+        .icon:hover{
+            background-color: orange;
+        }
+        .icon img{                        
+            height: 13px;
+            width: 13px;
+            margin: auto;  
+        }
+        .site-guide{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 120px;
+        }
+        .site-guide a{
+            text-decoration: none;
+            color:gray;
+        }
+        .front-page{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 55px;
+            margin:0 40px;
+        }
+        .front-page a{
+            margin: 0 10px;
+            
+        }
+        .bread-crumbs ul{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        .bread-crumbs li{
+            font-size: 20px;
+            margin: 25px;
+            transition-duration: .3s;
+        }
+        .bc-list{
+            transition-duration: .3s;
+        }
+        .bc-list:hover{
+            border-bottom: orange solid 2px;
+        }
+        .home{
+            border-bottom: orange solid 2px;
+        }
+        .donate{
+            margin: 0 40px;
+        }
+        .donate a{
+            display: block;
+            padding: 15px 30px;
+            color: orange;
+            font-size: 14px;
+            border: orange solid 2px;
+            border-radius: 2%;
+            transition-duration: .3s;
+        }
+        .donate a:hover{
+            border: dodgerblue solid 2px;
+            background-color: dodgerblue;
+            color: #fff;
+        }    
+        .help-donate{
+            height: 640px;
+            background-image: url(assets/asset\ 4.jpeg); 
+            background-position: center;
+            background-size: auto 100%;
+            background-repeat: no-repeat;
+            display: block;
+            color: gray;
+        }
+        .help-donate span{
+            
+            display: block;
+            padding-top: 190px;            
+            font-size: 45px;
+        }
+        h2{
+            display: block;
+            padding-left: 45px;
+            font-size: 75px;
+            color: dodgerblue;
+            padding-top: 10px;
+        }
+        .help-donate p{
+            display: block;
+            padding-left: 45px;           
+            font-size: 23px;
+            padding-top: 10px;
+        }
+        .help-donate a{
+            margin-left: 40px;
+            margin-top: 35px;
+            text-decoration: none;
+            width: 225px;
+            height: 70px;
+            display: block;            
+            color: #fff;
+            font-size: 14px;
+            border: orange solid 2px;
+            background-color: orange;
+            border-radius: 2%;
+            transition-duration: .3s;            
+        }
+        .help-donate .p-donate{
+            padding: 0px;
+            display: block; 
+            font-size: 20px;
+            margin: 25px;
+            text-align: center;
+        }
+        .help-donate a:hover{                        
+            border: #000 solid 2px;
+            background-color: #000;
+        }
+        .about{
+            height: 650px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .about img{
+            width: 750px;
+            height: 550px;
+            margin-top: 100px;
+            margin-left: 70px;
+            margin-right: 40px;            
+        }
+        .about .container{
+            display: flex;
+            flex-direction: column ;
+            height: 650px;        
+        }
+        .about .container span{
+            margin-top:210px;
+            font-size: 50px;
+            color: gray;
+        }
+        .about .container h3{
+            margin-top: 30px;
+            font-size: 30px;
+            color: dodgerblue;
+            margin-bottom: 27px;
+        }
+        .about .container p{
+            margin: 13px 0;
+            color: gray;
+        }
+        .about .container a{            
+            text-decoration: none;
+            width: 225px;
+            height: 70px;            
+            border: orange solid 2px;
+            background-color: orange;
+            border-radius: 2%;
+            transition-duration: .3s;
+            display: flex;                    
+        }
+        .about .container a p{  
+            color: #fff;
+            font-size: 14px;
+            margin: auto;
+        }
+        .about .container a:hover{                        
+            border: #000 solid 2px;
+            background-color: #000;
+        }
+        .help-type{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            background-color: rgb(235, 235, 235);
+        }
+        .help-type .container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        .help-type h3{
+            margin-top:100px ;
+            font-size: 45px;
+            color: gray;
+        }
+        .help-type p{
+            margin-top: 12px;
+            font-size: 35px;
+            color: dodgerblue;
+            margin-bottom: 52px;
+        }
+        .help-type .container-help-type{
+            display: flex;
+            justify-content: center;
+            align-items: center;           
+        }
+        .container-help-type div{
+            width:370px;
+            height:450px;
+            display: flex;
+            justify-content: center;
+            margin: 15px;
+            color: #fff;
+        } 
+        .container-help-type p{
+            color:  #fff;
+            margin-top: 370px;
+        }
+        .container-help-type .Volunteer{
+            background-image: url(assets/asset\ 5.jpeg);
+        }
+        .container-help-type .Adopt{
+            background-image: url(assets/asset\ 6.jpeg);
+        }
+        .container-help-type .Sponsor{
+            background-image: url(assets/asset\ 7.jpeg);
+        }
+
+         
+        
+
+
+    </style>
+</head>
+<body>
+    <div class="page">
+        <nav class="communication">
+            <div class="items">
+                <i class="fa-solid fa-phone"></i>
+                <p>Toll-free:</p>
+                <a href="#">(123)456-789</a>
+            </div>
+            <div class="items">
+                <a class="icon" href="#">
+                    <img src="assets/twitter.ico" alt="">
+                </a>
+                <a class="icon" href="#">
+                    <img src="assets/facebook.ico" alt="">
+                </a>
+                <a class="icon" href="#">
+                    <img src="assets/pinterest.ico" alt="">
+                </a>
+                <a class="icon" href="#">
+                    <img src="assets/linkedin.ico" alt="">
+                </a>
+            </div>
+        </nav>
+        <div class="site-guide">
+            <nav class="front-page">
+                <img src="assets/asset 0.png" alt="">
+                <a href="#">Anilove</a>
+            </nav>
+            <nav class="bread-crumbs">
+                <ul>
+                    <li><a class="home" href="#">Home</a></li>
+                    <li><a class="bc-list" href="#">About</a></li>
+                    <li><a class="bc-list" href="#">Events</a></li>
+                    <li><a class="bc-list" href="#">News</a></li>
+                    <li><a class="bc-list" href="#">Contacts</a></li>
+                </ul>
+            </nav>
+            <nav class="donate">
+                <a href="#">DONATE NOW!</a>
+            </nav>
+        </div>
+        <div class="help-donate">
+            <p><span>Animals Need</span></p>
+            <h2>YOUR Help!</h2>
+            <p>You can chip in with money & effort!</p>
+            <a href="#"><p class="p-donate">Donate now!</p></a>
+        </div>
+        <div class="about">
+            <img src="assets/asset 1.jpeg" alt="">
+            <div class="container">
+                <span>About Us</span>
+                <h3>What Makes Us Care About Pets?</h3>
+                <p>If it wasn’t for our founder’s childhood spent on a ranch in northern Texas, surrounded by domestic animals and pets all the time till she went to college – there might have been no Anilove animal shelter now. So as soon as she graduated with her Veterinary degree 12 years ago, she already knew what she will be doing for a living.</p>
+                <p>All in all, with thousands of animals saved off the streets and cared for every year, we hope to encourage much more pet adoptions to happen!</p>
+                <a href=""><p>LEARN MORE</p></a>
+            </div>
+        </div>
+        <div class="help-type">
+            <div class="container">
+                <h3>How You Can Help</h3>
+                <p>There Are Countless Ways You Can Join In & Help Us!</p>
+            </div>
+            <div class="container-help-type">
+                <div class="Volunteer"><p>Volunteer</p></div>
+                <div class="Adopt"><p>Adopt</p></div>
+                <div class="Sponsor"><p>Sponsor</p></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
