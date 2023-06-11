@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+
+</style>
+
+<body>
+    <span>請輸入0-100間的整數:</span>
+    <input type="text" class="myInput">
+    <button class="myBtn">click</button>
+    <span>已輸入:</span>
+    <span class="mySpan"></span>
+    <br>
+    <span class="myCorrect"></span>
+
+
+    <script>
+        const btn = document.querySelector('.myBtn')
+        const input = document.querySelector('.myInput')
+        const log = document.querySelector('.mySpan')
+        const correct = document.querySelector('.myCorrect')
+
+        let min, max, ans, inputValue, arrLog
+
+        window.onload = function () {
+            setElement()
+            btn.addEventListener("click", function () { runGame() })
+        }
+
+        function setElement() {
+            min = 1
+            max = 100
+            ans = getRandom(max)
+            arrLog = []
+        }
+        function getRandom(x) {
+            return Math.floor(Math.random() * x) + 1
+        }
+
+        function runGame() {
+            if (checkInputIsNum() && checkInputInRange()) {
+                updateLog()
+                updateMaxAndMin()
+            }
+            showReslt()
+        }
+
+        function checkInputIsNum() {
+            if (!isNaN(parseInt(input.value)) && isFinite(input.value) && parseInt(input.value, 10).toString() === input.value)//jQuery $.isNumeric             
+            {
+                inputValue = parseInt(input.value)
+                return true
+            }
+            else {
+                return false
+            }
+        }
+
+        function checkInputInRange() {
+            if (inputValue <= max && inputValue >= min) {
+                return true
+            }
+            else {
+                return false
+            }
+        }
+
+        function updateLog() {
+            arrLog.push(inputValue)
+            arrLog.sort(compareNumbers)
+            log.textContent = arrLog
+        }
+        function compareNumbers(a, b) {
+            return a - b;
+        }
+
+
+        function updateMaxAndMin() {
+            if (inputValue < ans) {
+                min = inputValue
+            }
+            else {
+                max = inputValue
+            }
+        }
+
+        function showReslt() {
+            if (inputValue != ans) {
+                alert(`請輸入${min}到${max}之間的整數`)
+            }
+            else {
+                alert(`正確，答案為${ans}`)
+                btn.disabled = true
+                correct.textContent=`正確，答案為${ans}`
+            }
+        }
+    </script>
+
+</body>
+
+</html>
