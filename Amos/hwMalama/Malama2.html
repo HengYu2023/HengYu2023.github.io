@@ -1,0 +1,727 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Malama Hawaii【マラマハワイ】 ハワイ州レスポンシブルツーリズム情報サイト</title>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="../cssreset.css">
+
+
+    <style>
+        .page {
+            width: 100%;
+            margin: auto;
+        }
+
+        .container {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .items-list {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .title {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            margin: auto 15px;
+        }
+
+        .title::before {
+            content: "";
+            width: 100%;
+            height: 1px;
+            background-color: #ddd;
+            margin: 0.5em 0;
+        }
+
+        .title h3 {
+            display: flex;
+            align-items: flex-start;
+            justify-content: center;
+            flex-direction: column;
+            line-height: 1.3em;
+        }
+
+        .title h3 .jp {
+            font-size: 18px;
+            font-weight: 900;
+        }
+
+        .title h3 .en {
+            font-size: 13px;
+            color: #666;
+        }
+
+
+        .title a {
+            color: orangered;
+            font-size: 13px;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            text-decoration: none;
+        }
+
+        .title a span {
+            margin: 1.5em 0.1em;
+        }
+
+        .material-symbols-outlined {
+            font-variation-settings:
+                'FILL' 0,
+                'wght' 400,
+                'GRAD' 0,
+                'opsz' 48
+        }
+
+        .items-main {
+            width: 100%;
+        }
+
+        a.main {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            text-decoration: none;
+            margin-top: 15px;
+        }
+
+        .main-label {
+            margin: 0 15px;
+            padding-bottom: 5px;
+            color: #666;
+            font-size: 13px;
+            line-height: 1em;
+        }
+
+        .main-pic {
+            height: 230px;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .main-pic img {
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+            transition-duration: .3s;
+        }
+
+        .main-pic img:hover {
+            opacity: .6;
+        }
+        
+
+        .main-text {
+            display: flex;
+            flex-direction: column;
+            margin: 10px 15px;
+        }
+
+        .main-text h4 {
+            font-size: 18px;
+            font-weight: 900;
+            line-height: 2em;
+            color: #000;
+        }
+
+        .main-text p {
+            font-size: 13px;
+            line-height: 1.8em;
+            color: #666;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .date {
+            font-size: 10px;
+            line-height: 1.8em;
+            color: #666;
+        }
+
+        .items-group {
+            margin: auto 15px;
+            flex-grow: 1;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .items-row {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            text-align: center;
+        }
+
+        .items:nth-child(odd) {
+            padding-right: 7px;
+        }
+
+        .items:nth-child(even) {
+            padding-left: 7px;
+        }
+
+        div.items {
+            width: 50%;
+            margin: 15px 0;
+        }
+
+        .items a {
+            text-decoration: none;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+        }
+
+        .items-label {
+            font-size: 13px;
+            color: #666;
+            line-height: 1em;
+            display: flex;
+            align-items: center;
+            overflow: hidden;
+            white-space: nowrap;
+            
+        }
+
+        .items-label img {
+            width: 20px;
+            margin: 0.3em;
+
+        }
+
+        .items-pic {
+            height: 100px;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 5px;
+        }
+
+        .items-pic img {
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+            transition-duration: .3s;
+        }
+
+        .items-pic img:hover {
+            opacity: .6;
+        }
+
+        .items-text {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            text-align: left;
+        }
+
+        .items-text h4 {
+            margin: 15px 0;
+            font-size: 14px;
+            font-weight: 900;
+            line-height: 1.5em;
+            color: #000;
+        }
+
+
+
+
+        @media screen and (min-width:548px) {
+            .main-pic {
+                height: 400px;
+            }
+
+            .items-pic {
+                height: 150px;
+            }
+        }
+
+        @media screen and (min-width:768px) {
+            .main-pic {
+                height: 300px;
+                border-radius: 10px;
+            }
+
+            .items-pic {
+                height: 130px;
+            }
+
+            .title h3 {
+                flex-direction: row;
+                line-height: 1.3em;
+            }
+
+            .title h3 .jp {
+                font-size: 23px;
+                font-weight: 900;
+            }
+
+            .title h3 .en {
+                font-size: 15px;
+                color: #666;
+                margin-left: 1em;
+            }
+
+            .items-list {
+                flex-direction: row;
+            }
+
+            .container:nth-child(even) .items-list {
+                flex-direction: row-reverse;
+            }
+
+            .items-main {
+                width: 50%;
+                padding: 0 15px;
+            }
+
+            .items-group {
+                width: 50%;
+
+            }
+
+            .items:nth-child(odd) {
+                padding-right: 15px;
+            }
+
+            .items:nth-child(even) {
+                padding-left: 15px;
+            }
+
+            .main-text {
+                flex-direction: row;
+                margin: 10px 0;
+            }
+
+            .main-text h4,
+            .main-text p {
+                width: 47.5%;
+            }
+
+            .main-text h4 {
+                font-size: 22px;
+                padding-right: 2.5%;
+
+            }
+
+            .main-text p {
+                padding-left: 2.5%;
+            }
+
+            .main-label {
+                margin: 0;
+            }
+        }
+
+        @media screen and (min-width:972px) {
+            .items-pic {
+                height: 170px;
+            }
+        }
+
+        @media screen and (min-width:1180px) {
+            .items-pic {
+                height: 195px;
+            }
+
+            .main-pic {
+                height: 400px;
+                border-radius: 10px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="page">
+        <div class="container travelers">
+            <div class="title">
+                <h3>
+                    <span class="jp">旅行者にできること</span>
+                    <span class="en">What Travelers Can Do</span>
+                </h3>
+                <a href="#">
+                    <span>すべて見る</span>
+                    <span class="material-symbols-outlined">
+                        arrow_circle_right
+                    </span>
+                </a>
+            </div>
+            <div class="items-list">
+                <div class="items-main">
+                    <a class="main" href="#">
+                        <span> </span>
+                        <div class="main-pic">
+                            <img src="Malama/d1-1.png" alt="main">
+                        </div>
+                        <div class="main-text">
+                            <h4>今年もアースデーにビーチクリーンを開催！</h4>
+                            <p>
+                                <span>毎年4月22日は地球環境について考える日「アースデー」。最近ではこの日だけでなく、4月をアース月間として世界中で環境保護活動が行われるようになりました。太平洋の</span>
+                                <span class="date">2023.04.18</span>
+                            </p>
+                        </div>
+                    </a>
+                </div>
+                <div class="items-group">
+                    <div class="items-row">
+                        <div class="items">
+                            <a href="#">
+                                <span class="items-label">
+                                    <img src="Malama/icon_eco.svg" alt="">
+                                    <p>エコ活動</p>
+                                </span>
+                                <div class="items-pic">
+                                    <img src="Malama/d1-2.jpg" alt="items-pic">
+                                </div>
+                                <div class="items-text">
+                                    <h4>【ハワイ島】海深914mから湧き出る海洋深層水の製塩所ツアーを体験！お土産に最適な12種類の絶品ハワイアンソルトも</h4>
+                                    <span class="date">2022.06.14</span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="items">
+                            <a href="#">
+                                <span class="items-label">
+                                    <img src="Malama/icon_event.svg" alt="">
+                                    <p>イベント</p>
+                                </span>
+                                <div class="items-pic">
+                                    <img src="Malama/d1-3.jpg" alt="items-pic">
+                                </div>
+                                <div class="items-text">
+                                    <h4>キング・カメハメハ・デー制定150周年記念イベント</h4>
+                                    <span class="date">2022.06.08</span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="items-row">
+                        <div class="items">
+                            <a href="#">
+                                <span class="items-label">
+                                    <img src="Malama/icon_other.svg" alt="">
+                                    <p>その他</p>
+                                </span>
+                                <div class="items-pic">
+                                    <img src="Malama/d1-4.jpg" alt="items-pic">
+                                </div>
+                                <div class="items-text">
+                                    <h4>ユニクロ アラモアナ店〜UTme!限定デザイン「Together in Hawaii」シリーズでハワイフードバンクに寄付を〜</h4>
+                                    <span class="date">2022.01.28</span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="items">
+                            <a href="#">
+                                <span class="items-label">
+                                    <img src="Malama/icon_culture.svg" alt="">
+                                    <p>カルチャー</p>
+                                </span>
+                                <div class="items-pic">
+                                    <img src="Malama/d1-5.png" alt="items-pic">
+                                </div>
+                                <div class="items-text">
+                                    <h4>「E Ulu A Paʻa」～ビショップ ミュージアム が年に一度のファンドレイジングを開催！～</h4>
+                                    <span class="date">2021.08.12</span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container corporate">
+            <div class="title">
+                <h3>
+                    <span class="jp">企業の取組み</span>
+                    <span class="en">Corporate Initiatives</span>
+                </h3>
+                <a href="#">
+                    <span>すべて見る</span>
+                    <span class="material-symbols-outlined">
+                        arrow_circle_right
+                    </span>
+                </a>
+            </div>
+            <div class="items-list">
+                <div class="items-main">
+                    <a class="main" href="#">
+                        <span class="main-label">ジャルパック</span>
+                        <div class="main-pic">
+                            <img src="Malama/d2-1.jpeg" alt="main">
+                        </div>
+                        <div class="main-text">
+                            <h4>【チームJALハワイ】ビーチクリーンアップ活動で地元コミュニティに貢献！￼</h4>
+                            <p>
+                                <span>JALハワイ支店とJALPAK International
+                                    Hawaiiで構成された“チームJALハワイ”は、ハワイ州観光局が提唱する「マラマハワイ～ハワイを思</span>
+                                <span class="date">2022.11.02</span>
+                            </p>
+                        </div>
+                    </a>
+                </div>
+                <div class="items-group">
+                    <div class="items-row">
+                        <div class="items">
+                            <a href="#">
+
+                                <div class="items-pic">
+                                    <img src="Malama/d2-2.jpg" alt="items-pic">
+                                </div>
+                                <div class="items-text">
+                                    <h4>廃棄された漁網を服に生まれ変わらせる！海を守ろうと活動する人々が主役のドキュメンタリーを作るプロジェクトをサポートしませんか？</h4>
+                                    <span class="date">2022.07.27</span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="items">
+                            <a href="#">
+
+                                <div class="items-pic">
+                                    <img src="Malama/d2-3.jpg" alt="items-pic">
+                                </div>
+                                <div class="items-text">
+                                    <h4>第33回タートル・インディペンデンス・デイ開催</h4>
+                                    <span class="date">2022.07.01</span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="items-row">
+                        <div class="items">
+                            <a href="#">
+                                <span class="items-label">
+                                    <p>オラカイ株式会社</p>
+                                </span>
+                                <div class="items-pic">
+                                    <img src="Malama/d2-4.jpg" alt="items-pic">
+                                </div>
+                                <div class="items-text">
+                                    <h4>「シーアスパラガス」を生産している「オラカイ」のサステナブルな取り組み</h4>
+                                    <span class="date">2022.06.15</span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="items">
+                            <a href="#">
+                                <span class="items-label">
+                                    <p>ザ・リッツカールトン・レジデンス・ワイキキ</p>
+                                </span>
+                                <div class="items-pic">
+                                    <img src="Malama/d2-5.jpg" alt="items-pic">
+                                </div>
+                                <div class="items-text">
+                                    <h4>【ザ・リッツ・カールトン・レジデンス ワイキキビーチ】オアフ島内最大運河、アラワイ運河の浄化プロジェクト「ゲンキ・アラワイ・プロジェクト」の協力パートナーに
+                                    </h4>
+                                    <span class="date">2022.06.14</span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container tourism">
+            <div class="title">
+                <h3>
+                    <span class="jp">ハワイ州観光局の取組み</span>
+                    <span class="en">Hawai‘i Tourism Japan Initiatives</span>
+                </h3>
+                <a href="#">
+                    <span>すべて見る</span>
+                    <span class="material-symbols-outlined">
+                        arrow_circle_right
+                    </span>
+                </a>
+            </div>
+            <div class="items-list">
+                <div class="items-main">
+                    <a class="main" href="#">
+                        <span class="main-label">ハワイ州観光局</span>
+                        <div class="main-pic">
+                            <img src="Malama/d3-1.jpg" alt="main">
+                        </div>
+                        <div class="main-text">
+                            <h4>マウイ郡、ハワイ島、海洋生物に影響与える日焼け止めの流通禁止を発表</h4>
+                            <p>
+                                <span>2022年10月1日からマウイ郡ノンミネラルの日焼け止めの流通・販売禁止条例を施行 マウイ郡の条例5306号により、2022年10月1日からマウイ島、ラナイ島、</span>
+                                <span class="date">2022.12.02</span>
+                            </p>
+                        </div>
+                    </a>
+                </div>
+                <div class="items-group">
+                    <div class="items-row">
+                        <div class="items">
+                            <a href="#">
+                                <span class="items-label">
+                                    <p>ハワイ州観光局</p>
+                                </span>
+                                <div class="items-pic">
+                                    <img src="Malama/d3-2.jpeg" alt="items-pic">
+                                </div>
+                                <div class="items-text">
+                                    <h4>TBSミニ番組　マラマ〜新しいハワイ旅〜</h4>
+                                    <span class="date">2022.10.01</span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="items">
+                            <a href="#">
+                                <span class="items-label">
+                                    <p>ハワイ州観光局</p>
+                                </span>
+                                <div class="items-pic">
+                                    <img src="Malama/d3-3.png" alt="items-pic">
+                                </div>
+                                <div class="items-text">
+                                    <h4>ハワイ州観光局、マラマハワイリツイートキャンペーン第2弾を実施！～動画の楽曲を作詞された倉木麻衣さんのbillboard classics主催シンフォニックコンサート3公演を合計30組60名様にご招待！～</h4>
+                                    <span class="date">2022.06.06</span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="items-row">
+                        <div class="items">
+                            <a href="#">
+                                <span class="items-label">
+                                    <p>ハワイ州観光局</p>
+                                </span>
+                                <div class="items-pic">
+                                    <img src="Malama/d3-4.jpg" alt="items-pic">
+                                </div>
+                                <div class="items-text">
+                                    <h4>ハワイ州観光局、モデルのローラさんをマラマハワイ・アンバサダーに任命</h4>
+                                    <span class="date">2022.04.22</span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="items">
+                            <a href="#">
+                                <span class="items-label">
+                                    <p>ハワイ州観光局</p>
+                                </span>
+                                <div class="items-pic">
+                                    <img src="Malama/d3-5.jpg" alt="items-pic">
+                                </div>
+                                <div class="items-text">
+                                    <h4>ハワイ州観光局、マラマハワイ動画のリツイートキャンペーンを実施～動画のために書き下ろした『Sea wind』が収録された倉木麻衣さんサイン入りCDを10名様に贈呈！～</h4>
+                                    <span class="date">2021.12.14</span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container community">
+            <div class="title">
+                <h3>
+                    <span class="jp">コミュニティの取り組み</span>
+                    <span class="en">Communitiy Initiatives</span>
+                </h3>
+                <a href="#">
+                    <span>すべて見る</span>
+                    <span class="material-symbols-outlined">
+                        arrow_circle_right
+                    </span>
+                </a>
+            </div>
+            <div class="items-list">
+                <div class="items-main">
+                    <a class="main" href="#">
+                        <div class="main-pic">
+                            <img src="Malama/d4-1.jpg" alt="main">
+                        </div>
+                        <div class="main-text">
+                            <h4>Zero Waste Oahu (ゼロウェイストオアフ) の取り組み</h4>
+                            <p>
+                                <span>Zero Waste Oahuは現在の生産方法、購買システム、廃棄物管理システムに積極的に介入するシステムを通じて、バランスのとれた消費文化と廃棄物の少ない未来</span>
+                                <span class="date">2022.07.20</span>
+                            </p>
+                        </div>
+                    </a>
+                </div>
+                <div class="items-group">
+                    <div class="items-row">
+                        <div class="items">
+                            <a href="#">
+                                <span class="items-label">
+                                    <p>サスティナブル・コーストラインズ・ハワイ（Sustainable Coastlines Hawaii）</p>
+                                </span>
+                                <div class="items-pic">
+                                    <img src="Malama/d4-2.jpeg" alt="items-pic">
+                                </div>
+                                <div class="items-text">
+                                    <h4>サスティナブル・コーストラインズ・ハワイ、第二回クリーンアップイベント「The Kaimukī Cleanup Festival 」に参加</h4>
+                                    <span class="date">2022.06.20</span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="items">
+                            <a href="#">
+                                
+                                <div class="items-pic">
+                                    <img src="Malama/d4-3.jpg" alt="items-pic">
+                                </div>
+                                <div class="items-text">
+                                    <h4>地上最古の海洋生物の一種であるウミガメ　彼らを絶滅の危機から保護する「マラマ イ ナ ホヌ」</h4>
+                                    <span class="date">2022.05.26</span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="items-row">
+                        <div class="items">
+                            <a href="#">
+                                <span class="items-label">
+                                    <p>アウトリガー・ホテルズ＆リゾーツ</p>
+                                </span>
+                                <div class="items-pic">
+                                    <img src="Malama/d4-4.jpg" alt="items-pic">
+                                </div>
+                                <div class="items-text">
+                                    <h4>サステナブルなアートとファッションをテーマにしたイベント「THINK GLOBALLY, ACT LOCALLY」を開催</h4>
+                                    <span class="date">2022.04.23</span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="items">
+                            <a href="#">
+                                <span class="items-label">
+                                    <p>クプ・ハワイ（KUPU Hawaii）</p>
+                                </span>
+                                <div class="items-pic">
+                                    <img src="Malama/d4-5.jpg" alt="items-pic">
+                                </div>
+                                <div class="items-text">
+                                    <h4>次世代を支援するクプ・ハワイ、Hoʻokupu Centerの取り組み</h4>
+                                    <span class="date">2021.06.23</span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
