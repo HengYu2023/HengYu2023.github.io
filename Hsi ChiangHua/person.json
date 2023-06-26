@@ -1,0 +1,16 @@
+{
+    "firstname":"Arthur",
+    "gender":true,
+    "height":182,
+    "email":"positive0324@gmal.com",
+    "city":{
+        "通訊":"基隆",
+        "戶籍":"雲林"
+    },
+    "phone":{
+        "市話":"05-69xxxxx",
+        "行動電話":"0905-xxxxxx"
+    },
+    "cars":["Accord 3.5","Mazda 3"]
+
+}
