@@ -12,8 +12,8 @@
 
 
     <style>
-        /* page */
-        .page>div {
+        /* container-group */
+        .container-group>.container {
             margin: auto;
             max-width: 1920px;
         }
@@ -35,7 +35,8 @@
         }
 
         .highlight-pic {
-            height: 230px;
+            height: 230px;                       
+            margin: 0 calc(var(--col-gap) * -1);
         }
 
         .items-pic {
@@ -83,11 +84,11 @@
             color: #666;
         }
 
-        .view-all {
+        .more {
             text-decoration: none;
         }
 
-        .view-all .row {
+        .more .row {
             color: orangered;
             font-size: 13px;
             align-items: center;
@@ -210,6 +211,7 @@
             .highlight-pic {
                 height: 300px;
                 border-radius: 10px;
+                margin:0;
             }
 
             .items-pic {
@@ -291,7 +293,7 @@
                     <span lang="jp">旅行者にできること</span>
                     <span lang="en">What Travelers Can Do</span>
                 </h3>
-                <a class="view-all" href="#">
+                <a class="more" href="#">
                     <div class="container row">
                         <span>すべて見る</span>
                         <span class="material-symbols-outlined">
@@ -389,7 +391,7 @@
                     <span lang="jp">企業の取組み</span>
                     <span lang="en">Corporate Initiatives</span>
                 </h3>
-                <a class="view-all" href="#">
+                <a class="more" href="#">
                     <div class="container row">
                         <span>すべて見る</span>
                         <span class="material-symbols-outlined">
@@ -482,7 +484,7 @@
                     <span lang="jp">ハワイ州観光局の取組み</span>
                     <span lang="en">Hawai‘i Tourism Japan Initiatives</span>
                 </h3>
-                <a class="view-all" href="#">
+                <a class="more" href="#">
                     <div class="container row">
                         <span>すべて見る</span>
                         <span class="material-symbols-outlined">
@@ -581,7 +583,7 @@
                     <span lang="jp">コミュニティの取り組み</span>
                     <span lang="en">Communitiy Initiatives</span>
                 </h3>
-                <a class="view-all" href="#">
+                <a class="more" href="#">
                     <div class="container row">
                         <span>すべて見る</span>
                         <span class="material-symbols-outlined">
