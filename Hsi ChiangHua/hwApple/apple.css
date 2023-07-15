@@ -1,0 +1,273 @@
+    @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+    html {
+        --gap: 2px;
+    }
+
+    body {
+        font-family: 'Roboto', 'Noto Sans TC', sans-serif;
+    }
+
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+        position: relative;
+    }
+
+
+    /* --------------------front page---------------------- */
+    .page-selector {
+        cursor: pointer;
+    }
+
+    nav.bar {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items: center;
+        background-color: #444;
+        color: #fff;
+        fill: #fff
+    }
+
+    nav.bar.product-page {
+        background-color: #fff;
+        color: #000;
+        fill: #000
+    }
+
+    img {
+        display: block;
+    }
+
+    .card-group {
+        box-sizing: border-box;
+        padding: var(--gap);
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .card {
+        position: relative;
+        padding: var(--gap) 0;
+        width: calc(100% + 2 * var(--gap));
+        box-sizing: border-box;
+    }
+
+    .card h3 {
+        position: absolute;
+        top: 20%;
+        left: 50%;
+        transform: translate(-50%);
+        color: #fff;
+        font-size: 50px;
+        font-weight: 500;
+    }
+
+    .card img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    /* --------------------product page---------------------- */
+    .title {
+        width: 100%;
+    }
+
+    .title * {
+        padding: 1%;
+    }
+
+    .title h3 {
+        font-size: 30px;
+    }
+
+    [class*="-price"] {
+        font-size: 10px;
+    }
+
+    .highlight {
+        width: 100%;
+        height: 70%;
+        box-sizing: border-box;
+        position: relative;
+        top: 10%;
+        padding: 1%;
+    }
+
+    .highlight img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 10px;
+    }
+
+    .item-list {
+        width: 100%;
+        box-sizing: border-box;
+        padding: 1%;
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .selector-cover {
+        position: absolute;
+        z-index: 1;
+        height: 100%;
+        width: 94%;
+        background-color: #fff9;
+
+    }
+
+    .item-list .item {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .item>* {
+        margin: 3% 0;
+    }
+
+    .selector-group {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .selector {
+        box-sizing: border-box;
+        border: 1px solid #000;
+        border-radius: 5px;
+        padding: 5%;
+        width: calc(50% - 2 * var(--gap));
+        margin: var(--gap);
+        position: relative;
+    }
+
+    .selector,
+    .selector * {
+        cursor: pointer;
+    }
+
+    .selector[slct="1"] {
+        border: 2px solid #33f;
+        padding: calc(5% - 1px);
+    }
+
+    .selector * {
+        display: block;
+        text-align: center;
+    }
+
+    .color .selector img {
+        width: 30%;
+        margin: auto;
+        padding: 3%;
+    }
+
+    .storage .selector *,
+    .chip .selector * {
+
+        padding: 6%;
+    }
+
+    .network .selector,
+    .screen .selector {
+        width: calc(100% - 2 * var(--gap));
+        margin: var(--gap);
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .network .selector label {
+        text-align: start
+    }
+
+    .summary-spec {
+        font-size: 10px;
+    }
+
+
+    /* --------------------iPad item order---------------------- */
+    .iPad .item.color {
+        order: 1;
+    }
+
+    .iPad .item.storage {
+        order: 2;
+    }
+
+    .iPad .item.network {
+        order: 3;
+    }
+
+    .iPad .item.summary {
+        order: 4;
+    }
+
+    /* --------------------iPhone item order---------------------- */
+    .iPhone .item.color {
+        order: 2;
+    }
+
+    .iPhone .item.storage {
+        order: 3;
+    }
+
+    .iPhone .item.screen {
+        order: 1;
+    }
+
+    .iPhone .item.summary {
+        order: 4;
+    }
+
+    /* --------------------Mac item order---------------------- */
+    .Mac .item.color {
+        order: 3;
+    }
+
+    .Mac .item.storage {
+        order: 4;
+    }
+
+    .Mac .item.screen {
+        order: 1;
+    }
+
+    .Mac .item.chip {
+        order: 2;
+    }
+
+    .Mac .item.summary {
+        order: 5;
+    }
+
+    @media screen and (min-width:768px) {
+
+        .card {
+            position: relative;
+            padding: var(--gap);
+            width: 50%;
+            box-sizing: border-box;
+        }
+
+        .card:first-child {
+            padding-left: 0;
+            padding-right: 0;
+            width: 100%;
+            width: calc(100% + 2 * var(--gap));
+            margin: 0 calc(-1 * var(--gap));
+        }
+
+
+        .highlight {
+            width: 70%;
+            position: sticky;
+        }
+
+        .item-list {
+            width: 30%;
+        }
+    }

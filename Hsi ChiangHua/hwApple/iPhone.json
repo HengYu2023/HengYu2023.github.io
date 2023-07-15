@@ -1,0 +1,152 @@
+{
+    "name": "iPhone",
+    "img": "iPhone/iPhone.jpg",
+    "optional": [
+        {
+            "name": "color",
+            "text": {
+                "title": "外觀。",
+                "detail": "挑選你喜愛的外觀。"
+            },
+            "data": [
+                {
+                    "type": "deeppurple",
+                    "label": "深紫色",
+                    "labelImg": "iPhone/slct-deeppurple.jpg",
+                    "highlightImg": "iPhone/deeppurple.jpg"
+                },
+                {
+                    "type": "gold",
+                    "label": "金色",
+                    "labelImg": "iPhone/slct-gold.jpg",
+                    "highlightImg": "iPhone/gold.jpg"
+                },
+                {
+                    "type": "silver",
+                    "label": "銀色",
+                    "labelImg": "iPhone/slct-silver.jpg",
+                    "highlightImg": "iPhone/silver.jpg"
+                },
+                {
+                    "type": "spaceblack",
+                    "label": "太空黑色",
+                    "labelImg": "iPhone/slct-spaceblack.jpg",
+                    "highlightImg": "iPhone/spaceblack.jpg"
+                }
+            ]
+        },
+        {
+            "name": "storage",
+            "text": {
+                "title": "儲存裝置。",
+                "detail": "你需要多少儲存空間？"
+            },
+            "data": [
+                {
+                    "type": "128GB",
+                    "label": "128GB"
+                },
+                {
+                    "type": "256GB",
+                    "label": "256GB"
+                },
+                {
+                    "type": "512GB",
+                    "label": "512GB"
+                },
+                {
+                    "type": "1TB",
+                    "label": "1TB"
+                }
+            ]
+        },
+        {
+            "name": "screen",
+            "text": {
+                "title": "機型。",
+                "detail": "哪一款最適合你？"
+            },
+            "data": [
+                {
+                    "type": "Pro",
+                    "label": "iPhone 14 Pro"
+                },
+                {
+                    "type": "Pro-Max",
+                    "label": "iPhone 14 Pro Max"
+                }
+            ]
+        }
+    ],
+    "price": {
+        "unit": "NT",
+        "base": "34900",
+        "condition": [
+            {
+                "name": "storage",
+                "data": [
+                    {
+                        "type": "256GB",
+                        "increase": "3500"
+                    },
+                    {
+                        "type": "512GB",
+                        "increase": "10500"
+                    },
+                    {
+                        "type": "1TB",
+                        "increase": "17500"
+                    }
+                ]
+            },
+            {
+                "name": "screen",
+                "data": [
+                    {
+                        "type": "Pro-Max",
+                        "increase": "4000"
+                    }
+                ]
+            }
+        ]
+    },
+    "highlight": {
+        "condition": [
+            {
+                "name": "color",
+                "data": [
+                    {
+                        "type": "deeppurple",
+                        "highlightImg": "iPhone/deeppurple.jpg"
+                    },
+                    {
+                        "type": "gold",
+                        "highlightImg": "iPhone/gold.jpg"
+                    },
+                    {
+                        "type": "silver",
+                        "highlightImg": "iPhone/silver.jpg"
+                    },
+                    {
+                        "type": "spaceblack",
+                        "highlightImg": "iPhone/spaceblack.jpg"
+                    }                    
+                ]
+            },
+            {
+                "name": "screen",
+                "data": [
+                    {
+                        "type": "Pro",
+                        "highlightImg": "iPhone/iPhone.jpg"
+                    },
+                    {
+                        "type": "Pro-Max",
+                        "highlightImg": "iPhone/iPhone.jpg"
+                    }                    
+                ] 
+            }
+        ]
+
+    }
+}
