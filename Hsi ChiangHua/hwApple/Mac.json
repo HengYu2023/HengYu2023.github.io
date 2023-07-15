@@ -144,11 +144,11 @@
                 "data": [
                     {
                         "type": "13-inch",
-                        "highlightImg": "Mac/13inch.jpg"
+                        "highlightImg": "Mac/inch.jpg"
                     },
                     {
                         "type": "15-inch",
-                        "highlightImg": "Mac/15inch.jpg"
+                        "highlightImg": "Mac/inch.jpg"
                     }                    
                 ] 
             }

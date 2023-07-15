@@ -113,19 +113,57 @@ function setFrontPage(url) {
                                     })
 
                                     //highlight當前選擇
-                                    setPageData.highlight.condition.forEach(condition => {
-                                        let slcts = document.querySelectorAll(`.${setPageData.name} .${condition.name} .selector`)
+                                    //如果slct有highlightImg，塞連結，如果沒有highlightImg，塞顏色選擇器的圖，再沒有，塞產品圖 
+                                    let items = document.querySelectorAll(`.${setPageData.name} .item`)
+                                    let hLImg = document.querySelector(`.${setPageData.name}.highlight img`)
 
-                                        condition.data.forEach(data => {
-                                            slcts.forEach(slct => {
-                                                if (slct.getAttribute("value") == data.type) {
-                                                    slct.addEventListener("click", () => {
-                                                        document.querySelector(`.${setPageData.name}.highlight img`).src = data.highlightImg
+                                    items.forEach(item => {
+                                        let slcts = item.querySelectorAll(".selector")
+                                        let nameMacth = false
+                                        setPageData.highlight.condition.forEach(condition => {
+                                            if (item.className.includes(condition.name)) {
+                                                nameMacth = true
+                                                slcts.forEach(slct => {
+                                                    let typeMatch = false
+                                                    condition.data.forEach(data => {
+                                                        if (slct.getAttribute("value") == data.type) {
+                                                            typeMatch = true
+                                                            slct.addEventListener("click", () => {
+                                                                hLImg.src = data.highlightImg
+                                                            })
+                                                        }
                                                     })
-                                                }
-                                            })
+                                                    if (typeMatch == false) {
+                                                        slct.addEventListener("click", () => {
+                                                            let clrSlcted = document.querySelector(`.${setPageData.name} .color [slct="1"]`)
+                                                            if (clrSlcted != undefined) {
+                                                                hLImg.src =
+                                                                    setPageData.highlight.condition.find(condition => condition.name == "color").data.find(data => data.type == clrSlcted.getAttribute("value")).highlightImg
+                                                            }
+                                                            else {
+                                                                hLImg.src = setPageData.img
+                                                            }
+                                                        })
+                                                    }
+                                                })
+                                            }
+                                            if (nameMacth == false) {
+                                                slcts.forEach(slct => {
+                                                    slct.addEventListener("click", () => {
+                                                        let clrSlcted = document.querySelector(`.${setPageData.name} .color [slct="1"]`)
+                                                        if (clrSlcted != undefined) {
+                                                            hLImg.src =
+                                                                setPageData.highlight.condition.find(condition => condition.name == "color").data.find(data => data.type == clrSlcted.getAttribute("value")).highlightImg
+                                                        }
+                                                        else {
+                                                            hLImg.src = setPageData.img
+                                                        }
+                                                    })
+                                                })
+                                            }
                                         })
                                     })
+
 
                                     //移除次層選擇器屏蔽
                                     document.querySelectorAll(`.${setPageData.name} .item`).forEach(item => {
@@ -169,9 +207,7 @@ function setFrontPage(url) {
                                     })
                                     //按鈕判斷價格
 
-                                    /* 挑出有調價機制按鈕
-                                    如果後面區塊有價格，要疊加此區塊價格
- 
+                                    /* 挑出有調價機制按鈕                                     
                                     設計一個陣列放入目前選擇條件，依陣列內容調整價格
                                     陣列照item的order排序，以包含自己以前的條件，調整之後item的價格 */
 
@@ -258,7 +294,7 @@ function setFrontPage(url) {
                                         })
                                     })
 
-
+                                    //如果每個選取區塊都有選到，更新產品規格
                                     document.querySelectorAll(`.${setPageData.name} .selector`).forEach(slct => {
                                         slct.addEventListener("click", () => {
                                             let slctGroupNum = [...document.querySelectorAll(`.${setPageData.name} .selector-group`)].length
@@ -336,7 +372,6 @@ function createTitle(pageData) {
 
     let summaryPrice = document.createElement("div")
     summaryPrice.className = "summary-price"
-    /* summaryPrice.innerHTML = calcPrice(pageData) */
 
     title.append(product, summaryPrice)
 
