@@ -4,70 +4,29 @@
     "optional": [
         {
             "name": "color",
-            "text": {
-                "title": "外觀。",
-                "detail": "挑選喜愛的顏色。"
-            },
+            "text": {"title": "外觀。","detail": "挑選喜愛的顏色。"},
             "data": [
-                {
-                    "type": "gray",
-                    "label": "太空灰",
-                    "labelImg": "iPad/slct-gray.png"
-                },
-                {
-                    "type": "blue",
-                    "label": "藍色",
-                    "labelImg": "iPad/slct-blue.png"
-                },
-                {
-                    "type": "pink",
-                    "label": "粉紅色",
-                    "labelImg": "iPad/slct-pink.png"
-                },
-                {
-                    "type": "purple",
-                    "label": "紫色",
-                    "labelImg": "iPad/slct-purple.png"
-                },
-                {
-                    "type": "starlight",
-                    "label": "星光色",
-                    "labelImg": "iPad/slct-starlight.png"
-                }
+                {"type": "gray","label": "太空灰","labelImg": "iPad/slct-gray.png"},
+                {"type": "blue","label": "藍色","labelImg": "iPad/slct-blue.png"},
+                {"type": "pink","label": "粉紅色","labelImg": "iPad/slct-pink.png"},
+                {"type": "purple","label": "紫色","labelImg": "iPad/slct-purple.png"},
+                {"type": "starlight","label": "星光色","labelImg": "iPad/slct-starlight.png"}
             ]
         },
         {
             "name": "storage",
-            "text": {
-                "title": "儲存裝置。",
-                "detail": "選擇需要的儲存空間大小。"
-            },
+            "text": {"title": "儲存裝置。","detail": "選擇需要的儲存空間大小。"},
             "data": [
-                {
-                    "type": "64GB",
-                    "label": "64GB"
-                },
-                {
-                    "type": "256GB",
-                    "label": "256GB"
-                }
+                {"type": "64GB","label": "64GB"},
+                {"type": "256GB","label": "256GB"}
             ]
         },
         {
             "name": "network",
-            "text": {
-                "title": "連線能力。",
-                "detail": "選擇連線方式。"
-            },
+            "text": {"title": "連線能力。","detail": "選擇連線方式。"},
             "data": [
-                {
-                    "type": "Wi-Fi",
-                    "label": "Wi-Fi"
-                },
-                {
-                    "type": "Cellular",
-                    "label": "Wi-Fi + 行動網路"
-                }
+                {"type": "Wi-Fi","label": "Wi-Fi"},
+                {"type": "Cellular","label": "Wi-Fi + 行動網路"}
             ]
         }
     ],
@@ -78,19 +37,13 @@
             {
                 "name": "storage",
                 "data": [
-                    {
-                        "type": "256GB",
-                        "increase": "5000"
-                    }
+                    {"type": "256GB","increase": "5000"}
                 ]
             },
             {
                 "name": "network",
                 "data": [
-                    {
-                        "type": "Cellular",
-                        "increase": "5000"
-                    }
+                    {"type": "Cellular","increase": "5000"}
                 ]
             }
         ]
@@ -100,39 +53,18 @@
             {
                 "name": "color",
                 "data": [
-                    {
-                        "type": "gray",
-                        "highlightImg": "iPad/gray.jpg"
-                    },
-                    {
-                        "type": "blue",
-                        "highlightImg": "iPad/blue.jpg"
-                    },
-                    {
-                        "type": "pink",
-                        "highlightImg": "iPad/pink.jpg"
-                    },
-                    {
-                        "type": "purple",
-                        "highlightImg": "iPad/purple.jpg"
-                    },
-                    {
-                        "type": "starlight",
-                        "highlightImg": "iPad/starlight.jpg"
-                    }
+                    {"type": "gray","highlightImg": "iPad/gray.jpg"},
+                    {"type": "blue","highlightImg": "iPad/blue.jpg"},
+                    {"type": "pink","highlightImg": "iPad/pink.jpg"},
+                    {"type": "purple","highlightImg": "iPad/purple.jpg"},
+                    {"type": "starlight","highlightImg": "iPad/starlight.jpg"}
                 ]
             },
             {
                 "name": "network",
                 "data": [
-                    {
-                        "type": "Wi-Fi",
-                        "highlightImg": "iPad/connect.jpg"
-                    },
-                    {
-                        "type": "Cellular",
-                        "highlightImg": "iPad/connect.jpg"
-                    }                    
+                    {"type": "Wi-Fi","highlightImg": "iPad/connect.jpg"},
+                    {"type": "Cellular","highlightImg": "iPad/connect.jpg"}                    
                 ] 
             }
         ]

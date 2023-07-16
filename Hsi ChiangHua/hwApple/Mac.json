@@ -4,99 +4,44 @@
     "optional": [
         {
             "name": "color",
-            "text": {
-                "title": "外觀。",
-                "detail": "挑選你喜愛的外觀。"
-            },
+            "text": {"title": "外觀。","detail": "挑選你喜愛的外觀。"},
             "data": [
-                {
-                    "type": "midnight",
-                    "label": "午夜色",
-                    "labelImg": "Mac/slct-midnight.jpg"
-                },
-                {
-                    "type": "starlight",
-                    "label": "星光色",
-                    "labelImg": "Mac/slct-starlight.jpg"
-                },
-                {
-                    "type": "spacegray",
-                    "label": "太空灰色",
-                    "labelImg": "Mac/slct-spacegray.jpg"
-                },
-                {
-                    "type": "silver",
-                    "label": "銀色",
-                    "labelImg": "Mac/slct-silver.jpg"
-                }
+                {"type": "midnight","label": "午夜色","labelImg": "Mac/slct-midnight.jpg"},
+                {"type": "starlight","label": "星光色","labelImg": "Mac/slct-starlight.jpg"},
+                {"type": "spacegray","label": "太空灰色","labelImg": "Mac/slct-spacegray.jpg"},
+                {"type": "silver","label": "銀色","labelImg": "Mac/slct-silver.jpg"}
             ]
         },
         {
             "name": "storage",
-            "text": {
-                "title": "儲存裝置。",
-                "detail": "你需要多少儲存空間？"
-            },
+            "text": {"title": "儲存裝置。","detail": "你需要多少儲存空間？"},
             "data": [
-                {
-                    "type": "256GB",
-                    "label": "256GB SSD"
-                },
-                {
-                    "type": "512GB",
-                    "label": "512GB SSD"
-                }
+                {"type": "256GB","label": "256GB SSD"},
+                {"type": "512GB","label": "512GB SSD"}
             ]
         },
         {
             "name": "screen",
-            "text": {
-                "title": "尺寸。",
-                "detail": "哪一款最適合你？"
-            },
+            "text": {"title": "尺寸。","detail": "哪一款最適合你？"},
             "data": [
-                {
-                    "type": "13-inch",
-                    "label": "13-inch"
-                },
-                {
-                    "type": "15-inch",
-                    "label": "15-inch"
-                }
+                {"type": "13-inch","label": "13-inch"},
+                {"type": "15-inch","label": "15-inch"}
             ]
         },
         {
             "name": "chip",
-            "text": {
-                "title": "晶片。",
-                "detail": "護國神山台積電棒棒。"
-            },
+            "text": {"title": "晶片。","detail": "護國神山台積電棒棒。"},
             "data": [
-                {
-                    "type": "M1",
-                    "label": "M1"
-                },
-                {
-                    "type": "M2",
-                    "label": "M2"
-                }
+                {"type": "M1","label": "M1"},
+                {"type": "M2","label": "M2"}
             ]
         },
         {
             "name": "USB-C",
-            "text": {
-                "title": "電源轉接器。",
-                "detail": "P=IV，V=IR，YouKnow哇欸意屬。"
-            },
+            "text": {"title": "電源轉接器。","detail": "P=IV，V=IR，YouKnow哇欸意屬。"},
             "data": [
-                {
-                    "type": "30W",
-                    "label": "30W USB-C 電源轉接器"
-                },
-                {
-                    "type": "35W",
-                    "label": "35W 雙 USB-C 埠小型電源轉接器"
-                }
+                {"type": "30W","label": "30W USB-C 電源轉接器"},
+                {"type": "35W","label": "35W 雙 USB-C 埠小型電源轉接器"}
             ]
         }
     ],
@@ -107,37 +52,25 @@
             {
                 "name": "chip",
                 "data": [
-                    {
-                        "type": "M2",
-                        "increase": "5000"
-                    }
+                    {"type": "M2","increase": "5000"}
                 ]
             },
             {
                 "name": "screen",
                 "data": [
-                    {
-                        "type": "15-inch",
-                        "increase": "4000"
-                    }
+                    {"type": "15-inch","increase": "4000"}
                 ]
             },
             {
                 "name": "storage",
                 "data": [
-                    {
-                        "type": "512GB",
-                        "increase": "6000"
-                    }
+                    {"type": "512GB","increase": "6000"}
                 ]
             },
             {
                 "name": "USB-C",
                 "data": [
-                    {
-                        "type": "35W",
-                        "increase": "3000"
-                    }
+                    {"type": "35W","increase": "3000"}
                 ]
             }
         ]
@@ -147,35 +80,17 @@
             {
                 "name": "color",
                 "data": [
-                    {
-                        "type": "midnight",
-                        "highlightImg": "Mac/midnight.jpg"
-                    },
-                    {
-                        "type": "starlight",
-                        "highlightImg": "Mac/starlight.jpg"
-                    },
-                    {
-                        "type": "spacegray",
-                        "highlightImg": "Mac/spacegray.jpg"
-                    },
-                    {
-                        "type": "silver",
-                        "highlightImg": "Mac/silver.jpg"
-                    }                                        
+                    {"type": "midnight","highlightImg": "Mac/midnight.jpg"},
+                    {"type": "starlight","highlightImg": "Mac/starlight.jpg"},
+                    {"type": "spacegray","highlightImg": "Mac/spacegray.jpg"},
+                    {"type": "silver","highlightImg": "Mac/silver.jpg"}                                        
                 ]
             },
             {
                 "name": "screen",
                 "data": [
-                    {
-                        "type": "13-inch",
-                        "highlightImg": "Mac/inch.jpg"
-                    },
-                    {
-                        "type": "15-inch",
-                        "highlightImg": "Mac/inch.jpg"
-                    }                    
+                    {"type": "13-inch","highlightImg": "Mac/inch.jpg"},
+                    {"type": "15-inch","highlightImg": "Mac/inch.jpg"}                    
                 ] 
             }
         ]

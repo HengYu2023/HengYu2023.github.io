@@ -89,10 +89,10 @@
 
     .highlight {
         width: 100%;
-        height: 70%;
+        height: 50%;
         box-sizing: border-box;
         position: relative;
-        top: 10%;
+        top: 10px;
         padding: 1%;
     }
 
@@ -116,7 +116,7 @@
         position: absolute;
         z-index: 1;
         height: 100%;
-        width: 94%;
+        width: 100%;
         background-color: #fff9;
 
     }
@@ -166,6 +166,9 @@
         padding: 3%;
     }
 
+    .CPU .selector *,
+    .GPU .selector *,
+    .Memory .selector *,
     .storage .selector *,
     .chip .selector * {
 
@@ -181,7 +184,9 @@
         justify-content: space-between;
     }
 
-    .network .selector label {
+    .network .selector label,
+    .USB-C .selector label,
+    .screen .selector label {
         text-align: start
     }
 
@@ -226,7 +231,7 @@
 
     /* --------------------Mac item order---------------------- */
     .Mac .item.color {
-        order: 3;
+        order: 2;
     }
 
     .Mac .item.storage {
@@ -238,11 +243,12 @@
     }
 
     .Mac .item.chip {
-        order: 2;
+        order: 3;
     }
+
     .Mac .item.USB-C {
         order: 5;
-    }    
+    }
 
     .Mac .item.summary {
         order: 6;
@@ -273,5 +279,9 @@
 
         .item-list {
             width: 30%;
+        }
+        
+        .selector-cover{
+            width: 94%;
         }
     }
