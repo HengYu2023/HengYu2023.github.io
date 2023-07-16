@@ -81,6 +81,23 @@
                     "label": "M2"
                 }
             ]
+        },
+        {
+            "name": "USB-C",
+            "text": {
+                "title": "電源轉接器。",
+                "detail": "P=IV，V=IR，YouKnow哇欸意屬。"
+            },
+            "data": [
+                {
+                    "type": "30W",
+                    "label": "30W USB-C 電源轉接器"
+                },
+                {
+                    "type": "35W",
+                    "label": "35W 雙 USB-C 埠小型電源轉接器"
+                }
+            ]
         }
     ],
     "price": {
@@ -101,7 +118,7 @@
                 "data": [
                     {
                         "type": "15-inch",
-                        "increase": "7000"
+                        "increase": "4000"
                     }
                 ]
             },
@@ -111,6 +128,15 @@
                     {
                         "type": "512GB",
                         "increase": "6000"
+                    }
+                ]
+            },
+            {
+                "name": "USB-C",
+                "data": [
+                    {
+                        "type": "35W",
+                        "increase": "3000"
                     }
                 ]
             }

@@ -173,6 +173,7 @@
     }
 
     .network .selector,
+    .USB-C .selector,
     .screen .selector {
         width: calc(100% - 2 * var(--gap));
         margin: var(--gap);
@@ -239,9 +240,12 @@
     .Mac .item.chip {
         order: 2;
     }
+    .Mac .item.USB-C {
+        order: 5;
+    }    
 
     .Mac .item.summary {
-        order: 5;
+        order: 6;
     }
 
     @media screen and (min-width:768px) {
