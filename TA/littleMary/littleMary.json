@@ -1,0 +1,289 @@
+[
+    {
+        "id":1,
+        "color":"red",
+        "icon":"fa-solid fa-dragon",
+        "target": {
+            "type": "function",
+            "logic": "dragon"
+        }
+    },
+    {
+        "id":2,
+        "color":"blue",
+        "icon":"fa-solid fa-horse",
+        "target":{
+            "type": "function",
+            "logic": "horse"
+        }
+    },
+    {
+        "id":3,
+        "color":"green",
+        "icon":"fa-solid fa-dog",
+        "target":{
+            "type": "function",
+            "logic": "dog"
+        }
+    },
+    {
+        "id":4,
+        "color":"yellow",
+        "icon":"fa-solid fa-cat",
+        "target":{
+            "type": "function",
+            "logic": "cat"
+        }
+    },
+    {
+        "id":5,
+        "color":"purple",
+        "icon":"fa-solid fa-dove",
+        "target":{
+            "type": "function",
+            "logic": "dove"
+        }
+    },
+    {
+        "id":6,
+        "color":"bisque",
+        "icon":"fa-solid fa-fish",
+        "target":{
+            "type": "function",
+            "logic": "fish"
+        }
+    },
+    {
+        "id":7,
+        "color":"orange",
+        "icon":"fa-solid fa-otter",
+        "target":{
+            "type": "function",
+            "logic": "otter"
+        }
+    },
+    {
+        "id":8,
+        "color":"pink",
+        "icon":"fa-solid fa-cow",
+        "target":{
+            "type": "function",
+            "logic": "cow"
+        }
+    },
+    {
+        "id":9,
+        "color":"red",
+        "icon":"fa-solid fa-dragon",
+        "target": {
+            "type": "function",
+            "logic": "dragon"
+        }
+    },
+    {
+        "id":10,
+        "color":"blue",
+        "icon":"fa-solid fa-horse",
+        "target":{
+            "type": "function",
+            "logic": "horse"
+        }
+    },
+    {
+        "id":11,
+        "color":"green",
+        "icon":"fa-solid fa-dog",
+        "target":{
+            "type": "function",
+            "logic": "dog"
+        }
+    },
+    {
+        "id":12,
+        "color":"yellow",
+        "icon":"fa-solid fa-cat",
+        "target":{
+            "type": "function",
+            "logic": "cat"
+        }
+    },
+    {
+        "id":13,
+        "color":"purple",
+        "icon":"fa-solid fa-dove",
+        "target":{
+            "type": "function",
+            "logic": "dove"
+        }
+    },
+    {
+        "id":14,
+        "color":"bisque",
+        "icon":"fa-solid fa-fish",
+        "target":{
+            "type": "function",
+            "logic": "fish"
+        }
+    },
+    {
+        "id":15,
+        "color":"orange",
+        "icon":"fa-solid fa-otter",
+        "target":{
+            "type": "function",
+            "logic": "otter"
+        }
+    },
+    {
+        "id":16,
+        "color":"pink",
+        "icon":"fa-solid fa-cow",
+        "target":{
+            "type": "function",
+            "logic": "cow"
+        }
+    },{
+        "id":17,
+        "color":"red",
+        "icon":"fa-solid fa-dragon",
+        "target": {
+            "type": "function",
+            "logic": "dragon"
+        }
+    },
+    {
+        "id":18,
+        "color":"blue",
+        "icon":"fa-solid fa-horse",
+        "target":{
+            "type": "function",
+            "logic": "horse"
+        }
+    },
+    {
+        "id":19,
+        "color":"green",
+        "icon":"fa-solid fa-dog",
+        "target":{
+            "type": "function",
+            "logic": "dog"
+        }
+    },
+    {
+        "id":20,
+        "color":"yellow",
+        "icon":"fa-solid fa-cat",
+        "target":{
+            "type": "function",
+            "logic": "cat"
+        }
+    },
+    {
+        "id":21,
+        "color":"purple",
+        "icon":"fa-solid fa-dove",
+        "target":{
+            "type": "function",
+            "logic": "dove"
+        }
+    },
+    {
+        "id":22,
+        "color":"bisque",
+        "icon":"fa-solid fa-fish",
+        "target":{
+            "type": "function",
+            "logic": "fish"
+        }
+    },
+    {
+        "id":23,
+        "color":"orange",
+        "icon":"fa-solid fa-otter",
+        "target":{
+            "type": "function",
+            "logic": "otter"
+        }
+    },
+    {
+        "id":24,
+        "color":"pink",
+        "icon":"fa-solid fa-cow",
+        "target":{
+            "type": "function",
+            "logic": "cow"
+        }
+    },{
+        "id":25,
+        "color":"red",
+        "icon":"fa-solid fa-dragon",
+        "target": {
+            "type": "function",
+            "logic": "dragon"
+        }
+    },
+    {
+        "id":26,
+        "color":"blue",
+        "icon":"fa-solid fa-horse",
+        "target":{
+            "type": "function",
+            "logic": "horse"
+        }
+    },
+    {
+        "id":27,
+        "color":"green",
+        "icon":"fa-solid fa-dog",
+        "target":{
+            "type": "function",
+            "logic": "dog"
+        }
+    },
+    {
+        "id":28,
+        "color":"yellow",
+        "icon":"fa-solid fa-cat",
+        "target":{
+            "type": "function",
+            "logic": "cat"
+        }
+    },
+    {
+        "id":29,
+        "color":"purple",
+        "icon":"fa-solid fa-dove",
+        "target":{
+            "type": "function",
+            "logic": "dove"
+        }
+    },
+    {
+        "id":30,
+        "color":"bisque",
+        "icon":"fa-solid fa-fish",
+        "target":{
+            "type": "function",
+            "logic": "fish"
+        }
+    },
+    {
+        "id":31,
+        "color":"orange",
+        "icon":"fa-solid fa-otter",
+        "target":{
+            "type": "function",
+            "logic": "otter"
+        }
+    },
+    {
+        "id":32,
+        "color":"pink",
+        "icon":"fa-solid fa-cow",
+        "target":{
+            "type": "function",
+            "logic": "cow"
+        }
+    }  
+
+]
